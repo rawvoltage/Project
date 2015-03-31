@@ -96,7 +96,7 @@ form h1
     opacity: 0;
 }
 
-#part1 h1
+#main-slide h1
 {
     font-size: 42px;
 /*    width: 80%;*/
@@ -107,7 +107,7 @@ form h1
     float: left;
 }
 
-#part1 h2
+#main-slide h2
 {
     font-size: 72px;
 /*    display: inline;*/
@@ -385,7 +385,7 @@ nav ul
 /****************************************************/
 /****************************************************/
 
-#part1
+#main-slide
 {
     background: url("../assets/icymountains.jpg") no-repeat center;
 	background-size: cover;
@@ -401,17 +401,13 @@ nav ul
 /*    display: none;*/
 }
 
-.skrollP1
-{
-    position: relative;
-}
-
 .skrollP2
 {
     position: relative;
     top: 0;
     right: 0;
 }
+
 .contentP1
 {
     color: white;
@@ -422,6 +418,11 @@ nav ul
     width: 30%;
     height: auto;
     clear: both;
+}
+
+#main-slide div
+{
+    
 }
 
 #p1MButton
@@ -803,13 +804,22 @@ nav ul
 
 
 @media (max-width: 940px){    
-    .contentP1
+    #main-slide p
     {
-        color: white;
+        color: red;
         font-size: 1.1em;
         line-height: 25px;
-        width: 40%;
-        margin: 0 0 0 90px;
+        width: 80%;
+    }
+    
+    #main-slide div
+    {
+        color: white;
+        font-size: 1.4vw;
+        line-height: 27px;
+        text-align: left;
+        height: auto;
+        clear: both;
     }
     
     .latestWork1
