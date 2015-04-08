@@ -59,6 +59,7 @@ header
 {
     position: relative;
     top: calc(50% - (242px / 2));
+    clear: both;
 }
 
 form h1
@@ -94,6 +95,12 @@ form h1
 [placeholder]:focus::-webkit-input-placeholder
 {
     opacity: 0;
+}
+
+.google-signin
+{
+    margin: 20px;
+    clear: both;
 }
 
 #main-slide h1
@@ -803,8 +810,42 @@ nav ul
 */
 
 
-@media (max-width: 940px){    
-    #main-slide p
+@media (max-width: 940px){
+    .signup
+    {
+        width: 90%;
+    }
+    
+    .signup-fields
+    {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-left: 5px;
+        height: auto;
+        width: 90%;
+        font-size: 2.6em;
+        text-align: left;
+        line-height: 1em;
+        border: 1px solid #dde2e7;
+        border-radius: 6px;
+    }
+    
+    #main-slide h1
+    {
+        float: left;
+        display: inline;
+        margin: 35px 0 0 30px;
+    }
+    
+    #main-slide h2
+    {
+        float: left;
+        display: inline;
+        margin-left: 30px;
+    }
+    
+/*    #main-slide p*/
     {
         color: red;
         font-size: 1.1em;
@@ -818,6 +859,20 @@ nav ul
         font-size: 1.4vw;
         line-height: 27px;
         text-align: left;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        clear: both;
+    }
+    
+    #main-slide p
+    {
+        color: white;
+        font-size: calc(2.4vw + .2vw);
+        line-height: 27px;
+        text-align: left;
+        width: 90%;
+        margin-left: 30px;
         height: auto;
         clear: both;
     }
